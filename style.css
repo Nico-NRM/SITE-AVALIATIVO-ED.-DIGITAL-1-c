@@ -1,0 +1,50 @@
+:root {
+  --bg: #050505; /* Preto profundo */
+  --bg-soft: #0f0f0f;
+  --surface: rgba(20, 20, 20, 0.9);
+  --surface-strong: #151515;
+  --text: #ffffff;
+  --muted: #999999;
+  --line: rgba(255, 255, 255, 0.1);
+  
+  /* Identidade GTA V */
+  --primary: #588e3a; /* Verde Dollar */
+  --primary-strong: #3d6328;
+  --accent: #00aaff; /* Azul Michael */
+  --accent-soft: #eec211; /* Amarelo Trevor */
+  
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  --radius-lg: 4px; /* Estética mais quadrada e agressiva */
+  --radius-md: 2px;
+  --radius-sm: 0px;
+  --container: 1100px;
+}
+
+body {
+  font-family: 'Helvetica Condensed', 'Arial Narrow', sans-serif;
+  background: 
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url('https://api.screenshotmachine.com/?key=YOUR_KEY&url=https://www.rockstargames.com/V/&dimension=1920x1080'); /* Placeholder para o background de Los Santos */
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text);
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 4px solid var(--primary);
+}
+
+.action-btn {
+  background: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 0;
+  transition: 0.3s;
+}
+
+.action-btn:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 15px var(--primary);
+}
