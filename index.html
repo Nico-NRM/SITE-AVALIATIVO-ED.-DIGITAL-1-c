@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA V | Experiência Definitiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Navegação Principal">
+            <div class="logo">GTA <strong>V</strong></div>
+            <div class="a11y-controls">
+                <button onclick="toggleContrast()" aria-label="Alternar Alto Contraste">🌓</button>
+                <button onclick="changeFontSize('up')" aria-label="Aumentar Fonte">A+</button>
+                <button onclick="changeFontSize('down')" aria-label="Diminuir Fonte">A-</button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">Bem-vindo a Los Santos</h1>
+            <p>Um mundo de crime, glamour e infinitas possibilidades.</p>
+        </section>
+
+        <section class="section" id="characters-section">
+            <h2>Os Protagonistas</h2>
+            <div class="grid-container" id="characters-grid" role="list">
+                </div>
+        </section>
+
+        <section class="section" aria-label="Galeria de Mídia">
+            <h2>Galeria</h2>
+            <div class="carousel" role="region" aria-roledescription="carousel">
+                <div class="carousel-track" id="carousel-track">
+                    </div>
+                <button class="carousel-btn prev" aria-label="Slide anterior">❮</button>
+                <button class="carousel-btn next" aria-label="Próximo slide">❯</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Perguntas Frequentes</h2>
+            <div id="faq-container" class="accordion-group">
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Desenvolvido com foco em acessibilidade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
